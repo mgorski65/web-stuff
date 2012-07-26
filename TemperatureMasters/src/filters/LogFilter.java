@@ -12,6 +12,7 @@ import javax.servlet.ServletResponse;
 import javax.servlet.http.HttpServletRequest;
 
 
+
 public class LogFilter implements Filter {
 
     public void doFilter(ServletRequest req, ServletResponse res,
