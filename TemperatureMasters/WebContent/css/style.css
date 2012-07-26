@@ -1,0 +1,432 @@
+
+
+
+/* CSS Document */
+
+
+/* General */
+
+* {
+margin: 0;
+padding: 0;
+}
+
+html {
+height: 100%;
+font-size: 62.5%;
+}
+
+body {
+height: 100%;
+text-align: center;
+font: 1.2em Verdana, Arial, Helvetica, sans-serif;
+background: #FFFFFF url('../img/bg.gif') repeat-x 0 0;
+min-width: 950px;
+}
+
+a:link, a:visited {
+color: #BC0000;
+text-decoration: underline;
+font-weight: bold;
+}
+
+a:hover {
+text-decoration: none;
+}
+
+.cleaner {
+clear: both;
+height: 0;
+font-size: 0;
+visibility: hidden;
+}
+
+.noscreen {
+display: none;
+}
+
+.hidden { /* Skip menu */
+position: absolute;
+top: -10000px;
+left: 0;
+width: 1px;
+height: 1px;
+overflow: hidden;
+}
+
+
+/* Paragraphs, headings, ... */
+
+p {
+line-height: 170%;
+margin-bottom: 10px;
+}
+
+.perex {
+background-color: #FFE9E9;
+border-left: 4px solid #F74B4B;
+text-align: left;
+width: 85%;
+margin: 0 0 25px 0;
+padding: 5px 12px;
+}
+
+.perex p {
+margin: 0;
+color: #A50000;
+}
+
+.perex p a, .perex p a:visited {
+color: #A50000;
+}
+
+h1 {
+font-size: 2.5em;
+font-weight: normal;
+color: #FFFFFF;
+text-align: left;
+margin-left: 20px;
+padding: 23px 0 6px 0;
+background: url('../img/h1-bg.gif') repeat-x 0 100%;
+width: 50%;
+}
+
+h1 a:link, h1 a:visited {
+font-weight: normal;
+text-decoration: none;
+color: #FFFFFF;
+}
+
+h2 {
+font-size: 1.5em;
+font-family: Georgia, "Times New Roman", Times, serif;
+font-weight: normal;
+color: #FFFFFF;
+text-align: left;
+margin: 6px 0 0 23px;
+}
+
+h3 {
+color: #BC0000;
+font-size: 1.2em;
+text-align: left;
+letter-spacing: 1px;
+margin-bottom: 13px;
+}
+
+h3.line {
+background: url('../img/heading-dot.gif') repeat-x 0 50%;
+width: 90%;
+}
+
+h3.line span {
+margin-left: 12px;
+padding: 0 6px;
+background: #FFFFFF;
+}
+
+ul {
+list-style-type: none;
+}
+
+
+/* Images */
+
+img.portfolio {
+border: 3px solid #8ED8FF;
+margin: 0 12px 16px 0;
+}
+
+a:hover img.portfolio {
+border: 3px solid #FF6123;
+margin: 0 12px 16px 0;
+}
+
+
+/* Header */
+
+#header {
+margin: 0 auto;
+width: 850px;
+height: 172px;
+position: relative;
+background: #BC0000 url('../img/hd-bg.gif') repeat-x 0 0;
+text-align: left;
+}
+
+
+/* Search form */
+
+form.searching {
+width: 189px;
+height: 26px;
+position: absolute;
+top: 27px;
+right: 25px;
+}
+
+fieldset {
+border: 0;
+}
+
+#picture-input {
+position: absolute;
+top: 0;
+left:0;
+overflow: hidden;
+width: 155px;
+height: 26px;
+background: url('../img/input-bg.gif') 0 0 no-repeat;
+border: 0;
+}
+
+#picture-input input {
+position: relative;
+top: 5px;
+left: 10px;
+width: 140px;
+border: 0;
+letter-spacing: 1px;
+}
+
+form.searching input.hledat {
+letter-spacing: 1px;
+padding-left: 0;
+font-weight: bold;
+color: #FFFFFF;
+position: absolute;
+top: 0;
+right: 0;
+}
+
+form.searching label {
+display: none;
+}
+
+
+/* Menu */
+
+#menu {
+position: absolute;
+top: 136px;
+right: 18px;
+}
+
+#menu li {
+float: left;
+display: inline;
+list-style-type: none;
+}
+
+#menu li a {
+float: left;
+display: inline;
+list-style-type: none;
+text-align: center;
+color: #FFFFFF;
+font-size: 1.1em;
+text-decoration: underline;
+background-color: #232323;
+border-top: 1px solid black;
+border-left: 1px solid black;
+border-right: 1px solid black;
+padding: 0 1em;
+height: 30px;
+line-height: 30px;
+margin-left: 2px;
+}
+
+#menu li a:hover {
+background-color: #FFD2D2;
+color: #151515;
+border-top: 1px solid #562323;
+border-left: 1px solid #562323;
+border-right: 1px solid #562323;
+text-decoration: none;
+}
+
+#menu li a.active {
+background-color: #FF9191 !important;
+color: #151515;
+border-top: 1px solid #562323;
+border-left: 1px solid #562323;
+border-right: 1px solid #562323;
+text-decoration: none;
+}
+
+
+/* Content boxes */
+
+#content-box {
+width: 850px;
+margin: 0 auto;
+text-align: left;
+}
+
+#content-box-in {
+width: 100%;
+}
+
+#content-box-in-left {
+float: left;
+width: 70%;
+}
+
+#content-box-in-left-in {
+margin: 24px 0 30px 20px;
+background: url('../img/divider.gif') repeat-y 98% 0;
+}
+
+#content-box-in-right {
+float: right;
+width: 29%;
+}
+
+#content-box-in-right-in {
+margin: 24px 5px 10px 5px;
+}
+
+.galerie {
+padding: 1px 0;
+margin-right: 3px;
+min-height: 1px;
+}
+
+.foto {
+float: left;
+display: inline;
+width: 156px;
+height: 138px;
+margin: 0 10px 16px 0;
+background-color: white;
+text-align: center;
+border: 1px solid #FFFFFF;
+position: relative;
+}
+
+.foto img {
+margin: 13px auto 0 auto;
+border: 1px solid silver;
+}
+
+.foto:hover {
+background-color: #FFE2E2;
+border: 1px solid #F19E9E;
+}
+
+.foto p a, .foto p a:visited {
+font-size: 1.1em;
+color: #850000;
+font-weight: normal;
+margin-top: 6px;
+}
+
+.foto p {
+margin-top: 6px;
+color: #850000;
+}
+
+
+/* Content boxes directives */
+
+#content-box-in-right-in h3 {
+color: #850000;
+background-color: #FFE2E2;
+border: 1px solid #F19E9E;
+font-size: 1.1em;
+text-align: left;
+letter-spacing: 1px;
+padding: 2px 0 2px 7px;
+}
+
+#content-box-in-right-in dl {
+margin: 0 0 40px 4px;
+}
+
+#content-box-in-right-in dt {
+margin-bottom: 3px;
+font-weight: bold;
+}
+
+#content-box-in-right-in dd {
+margin: 0 5px 18px 3px;
+line-height: 145%;
+}
+
+#content-box-in-right-in dd a, #content-box-in-right-in dd a:visited {
+color: #BC0000;
+padding: 1px 2px;
+}
+
+#content-box-in-right-in dd a:hover {
+background-color: #BC0000;
+color: #FFFFFF;
+}
+
+#content-box-in-right-in dd span {
+font-size: 0.9em;
+}
+
+#content-box-in-right-in form {
+margin-left: 5px;
+}
+
+#content-box-in-right-in label {
+display: block;
+margin-bottom: 2px;
+}
+
+#content-box-in-right-in input {
+width: 180px;
+margin-bottom: 9px;
+}
+
+#content-box-in-right-in textarea {
+}
+
+#content-box-in-right-in input.send-button {
+width: auto;
+padding: 1px 3px;
+margin-top: 5px;
+}
+
+
+/* Footer */
+
+#footer {
+height: 144px;
+color: #FFFFFF;
+width: 100%;
+background: #BC0000 url('../img/footer-bg.gif') repeat-x 0 0;
+}
+
+#footer-in {
+width: 850px;
+height: 144px;
+margin: 0 auto;
+}
+
+#footer a, #footer a:visited {
+color: #FFFFFF;
+}
+
+p.footer-left {
+width: 350px;
+float: left;
+text-align: left;
+line-height: 190%;
+margin: 8px 0 0 12px;
+display: inline; /* Because of IE Doubled Float-Margin Bug */
+}
+
+p.footer-right {
+width: 350px;
+float: right;
+text-align: right;
+margin: 8px 12px 0 0;
+display: inline; /* Because of IE Doubled Float-Margin Bug */
+}
+
+p.footer-right a, p.footer-right a:visited  {
+font-weight: normal;
+}
