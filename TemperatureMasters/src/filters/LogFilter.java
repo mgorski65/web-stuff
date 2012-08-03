@@ -34,6 +34,9 @@ public class LogFilter implements Filter {
         //Get init parameter
         String testParam = config.getInitParameter("test-param");
 
+        
+        // snoopy was here
+        
         //Print the init parameter
         System.out.println("Test Param: " + testParam);
     }
