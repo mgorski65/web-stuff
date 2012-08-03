@@ -36,7 +36,11 @@ public class LogFilter implements Filter {
 
 
         // snoopy was here again
+
         // 2222 3333 4444 6666
+
+
+
         //Print the init parameter
         System.out.println("Test Param: " + testParam);
     }
